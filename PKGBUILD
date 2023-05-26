@@ -1,11 +1,18 @@
 # Maintainer: David K david.dk949@gmail.com
 pkgname=dmenu-scripts
 pkgver=unknown
-pkgrel=0
+pkgrel=2
 pkgdesc="Various scripts that use dmenu"
 arch=('any')
 url="https://github.com/dk949/$pkgname"
 license=('MIT')
+optdepends=(
+    'xdotool: for greek and sym'
+    'xclip: for greek and sym'
+    'unclutter: for screenshot'
+    'unclutter: for screenshot'
+    'imagemagick: for screenshot'
+)
 provides=(
     'bookmark'
     'greek'
