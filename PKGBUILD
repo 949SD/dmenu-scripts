@@ -1,11 +1,13 @@
 # Maintainer: David K david.dk949@gmail.com
-pkgname=dmenu-scripts
+_pkgname=dmenu-scripts
+pkgname="${_pkgname}-949sd"
 pkgver=unknown
-pkgrel=2
+pkgrel=0
 pkgdesc="Various scripts that use dmenu"
 arch=('any')
-url="https://github.com/dk949/$pkgname"
+url="https://github.com/dk949/$_pkgname"
 license=('MIT')
+depends=('dmenu-949sd')
 optdepends=(
     'xdotool: for greek and sym'
     'xclip: for greek and sym'
@@ -19,7 +21,7 @@ provides=(
     'screenshot'
     'sym'
 )
-source=("git+$url")
+source=("$pkgname::git+$url")
 md5sums=() #autofill using updpkgsums
 sha256sums=('SKIP')
 
